@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Your header content here -->
+            <h1>Music Playlist Explorer</h1>
+        </header>
+
+        <main>
+            <!-- Your main content here -->
+            <section class="playlist-cards">
+                <template id="playlistTemplate">
+                    <div class="playlist-card">
+                        <header class="card-thumbnail">
+                            <img src="assets/img/playlist.png" alt="Playlist thumbnail" />
+                        </header>
+                        <section>
+                            <h2>Playlist title</h2>
+                            <h3>Creator Name</h3>
+                        </section>
+                        <footer>
+                            <p><span>❤️</span>7</p>
+                        </footer>
+                    </div>
+                </template>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Your footer content here -->
+            <p>footer info</p>
+        </footer>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modalPlaylist" class="modal">
+        <div class="modal-content">
+            <span class="close" aria-label="Close">&times;</span>
+            <header>
+                <div class="playlist-thumbnail">
+                    <img src="assets/img/playlist.png" alt="Playlist thumbnail" />
+                </div>
+                <div class="playlist-info">
+                    <h4>Playlist title</h4>
+                    <p>Creator Name</p>
+                    <button>Shuffle</button>
+                </div>
+            </header>
+
+            <section class="playlist-songs">
+                <template id="songTemplate">
+                    <div class="playlist-song">
+                        <div class="song-thumbnail">
+                            <img src="assets/img/song.png" alt="Song thumbnail" />
+                        </div>
+                        <div class="song-info">
+                            <h5>Song title</h5>
+                            <p>Artist Name</p>
+                            <p>Album Name</p>
+                        </div>
+                        <div class="duration">0:00</div>
+                    </div>
+                </template>
+            </section>
+        </div>
+    </div>
+    <!-- <script src="data/data.js"></script> -->
+</body>
+
+</html>
