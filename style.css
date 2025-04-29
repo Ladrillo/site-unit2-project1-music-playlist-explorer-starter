@@ -81,3 +81,11 @@ body {
     max-width: 100px;
     overflow: hidden;
 }
+
+.like-btn {
+    cursor: pointer;
+}
+
+.liked .heart {
+    color: red;
+}
