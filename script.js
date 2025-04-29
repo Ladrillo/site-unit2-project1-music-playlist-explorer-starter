@@ -18,7 +18,6 @@
         const pClone = playlistTemplate.content.cloneNode(true)
         pClone.querySelector('h2').textContent = p.playlistTitle
         pClone.querySelector('h3').textContent = p.playlistCreator
-        pClone.querySelector('h3').textContent = p.playlistCreator
         const likeBtn = pClone.querySelector('.like-btn')
         const likeHeart = likeBtn.querySelector('.heart')
         const likeCount = likeBtn.querySelector('.like-count')
