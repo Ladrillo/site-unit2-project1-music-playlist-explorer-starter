@@ -3,6 +3,11 @@ body {
     background-color: #f8f8f8;
 }
 
+.playlist-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .playlist-card {
     width: 200px;
     border: 1px solid black;

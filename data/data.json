@@ -1,6 +1,7 @@
 [
     {
       "playlistId": 1,
+      "playlistTitle": "Late Night Drive",
       "playlistCreator": "Mickey Mouse",
       "playlistLikeCount": 7,
       "playlistSongs": [
@@ -50,6 +51,7 @@
     },
     {
       "playlistId": 2,
+      "playlistTitle": "Favorite Songs",
       "playlistCreator": "Donald Duck",
       "playlistLikeCount": 15,
       "playlistSongs": [
@@ -99,6 +101,7 @@
     },
     {
       "playlistId": 3,
+      "playlistTitle": "That Summer Feeling",
       "playlistCreator": "Goofy",
       "playlistLikeCount": 22,
       "playlistSongs": [
@@ -162,6 +165,7 @@
     },
     {
       "playlistId": 4,
+      "playlistTitle": "Workout Beats",
       "playlistCreator": "Daisy Duck",
       "playlistLikeCount": 5,
       "playlistSongs": [
@@ -239,6 +243,7 @@
     },
     {
       "playlistId": 5,
+      "playlistTitle": "Road Trip Anthems",
       "playlistCreator": "Pluto",
       "playlistLikeCount": 10,
       "playlistSongs": [
@@ -302,6 +307,7 @@
     },
     {
       "playlistId": 6,
+      "playlistTitle": "Boss Chick Energy",
       "playlistCreator": "Scrooge McDuck",
       "playlistLikeCount": 50,
       "playlistSongs": [
@@ -358,6 +364,7 @@
     },
     {
       "playlistId": 7,
+      "playlistTitle": "Rainy Nights",
       "playlistCreator": "Huey Duck",
       "playlistLikeCount": 8,
       "playlistSongs": [
@@ -414,6 +421,7 @@
     },
     {
       "playlistId": 8,
+      "playlistTitle": "Nothing But The Classics",
       "playlistCreator": "Louie Duck",
       "playlistLikeCount": 18,
       "playlistSongs": [
