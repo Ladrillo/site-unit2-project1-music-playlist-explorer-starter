@@ -7,22 +7,23 @@
     const shuffleButton = modalPlaylist.querySelector('.shuffle-btn')
     const modalTitle = modalPlaylist.querySelector('h4')
     const modalCreator = modalPlaylist.querySelector('h4~p')
+    const playlistCards = document.querySelector('.playlist-cards')
 
     let currentSongs = []
 
     modalPlaylist.addEventListener('click', evt => {
+        // Clicking on the grey background or the 'X' should close the modal
         if (evt.target === modalPlaylist || closeButton.contains(evt.target)) {
-            modalPlaylist.classList.toggle('hidden')
+            modalPlaylist.classList.add('hidden')
         }
     })
 
     shuffleButton.addEventListener('click', () => {
-        if (currentSongs.length) {
-            const shuffled = [...currentSongs].sort(() => Math.random() - 0.5)
-            writeSongs(shuffled)
-        }
+        currentSongs.sort(() => Math.random() - 0.5)
+        writeSongs(currentSongs)
     })
 
+    // Fetching won't work if index.html is not loaded by a web server (CORS)
     const response = await fetch('data/data.json')
     const playlists = await response.json()
 
@@ -34,30 +35,31 @@
         const likeBtn = pClone.querySelector('.like-btn')
         const likeHeart = likeBtn.querySelector('.heart')
         const likeCount = likeBtn.querySelector('.like-count')
+        playlistCards.appendChild(pClone)
 
         title.textContent = p.playlistTitle
         creator.textContent = p.playlistCreator
         likeCount.textContent = p.playlistLikeCount
 
         playlistCard.addEventListener('click', evt => {
+            // Clicking on card opens modal, unless clicking on the like btn
             if (likeBtn.contains(evt.target)) {
                 const liked = likeBtn.classList.toggle('liked')
                 const count = parseInt(likeCount.textContent, 10)
                 likeCount.textContent = liked ? count + 1 : count - 1
                 likeHeart.textContent = liked ? '♥' : '♡'
             } else {
-                currentSongs = [...p.playlistSongs]
                 modalTitle.textContent = p.playlistTitle
                 modalCreator.textContent = p.playlistCreator
+                currentSongs = p.playlistSongs
                 writeSongs(currentSongs)
                 modalPlaylist.classList.toggle('hidden')
             }
         })
-        document.querySelector('.playlist-cards').appendChild(pClone)
     })
 
     function writeSongs(songs) {
-        playlistSongs.replaceChildren()
+        playlistSongs.replaceChildren() // wipe out existing songs
         songs.forEach(s => {
             const sClone = songTemplate.content.cloneNode(true)
             sClone.querySelector('h5').textContent = s.songTitle
