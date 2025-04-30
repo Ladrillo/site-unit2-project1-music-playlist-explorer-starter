@@ -23,7 +23,7 @@
         writeSongs(currentSongs)
     })
 
-    // Fetching won't work if index.html is not loaded by a web server (CORS)
+    // Fetching won't work unless index.html is loaded by a web server (CORS)
     const response = await fetch('data/data.json')
     const playlists = await response.json()
 
