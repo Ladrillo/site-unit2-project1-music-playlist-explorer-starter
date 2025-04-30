@@ -35,7 +35,7 @@ Deployed Application: [Music Playlist Explorer Deployed Site](https://ladrillo.g
       - [X] Title
       - [X] Artist
       - [X] Duration
-  - [ X The modal itself should:
+  - [X] The modal itself should:
     - [X] Not occupy the entire screen.
     - [X] Have a shadow to show that it is a pop-up.
     - [X] Appear floating on the screen.
@@ -120,7 +120,7 @@ Deployed Application: [Music Playlist Explorer Deployed Site](https://ladrillo.g
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video actually renders and is playable when viewing this README. Ensure your walkthrough showcases the presence and/or functionality of all features you implemented above (check them off as you film!). Pay attention to any **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS** checkboxes listed above to ensure graders see the full functionality of your website! (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+<div style="position: relative; padding-bottom: 62.42774566473989%; height: 0;"><iframe src="https://www.loom.com/embed/66d8dcd2f4f042049cd51182abcd5895?sid=8d504f31-b190-4a04-96c7-70d5e35c5555" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### Reflection
 
