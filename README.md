@@ -118,9 +118,14 @@ Deployed Application: [Music Playlist Explorer Deployed Site](https://ladrillo.g
 
 ### Walkthrough Video
 
-<a href="https://www.loom.com/share/66d8dcd2f4f042049cd51182abcd5895" target="_blank">
-   <p>Click Here to Play Walkthrough Video</p>
-</a>
+<div>
+    <a href="https://www.loom.com/share/66d8dcd2f4f042049cd51182abcd5895">
+      <p>Music Playlist Explorer Demo - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/66d8dcd2f4f042049cd51182abcd5895">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/66d8dcd2f4f042049cd51182abcd5895-54ba1fba125809f2-full-play.gif">
+    </a>
+</div>
 
 ### Reflection
 
