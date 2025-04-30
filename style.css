@@ -3,34 +3,55 @@ body {
     background-color: #f8f8f8;
 }
 
+header.grey {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    height: 6em;
+    padding-left: 1rem;
+}
+
 .playlist-cards {
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem;
 }
 
 .playlist-card {
-    width: 200px;
-    border: 1px solid black;
+    width: 270px;
+    border: 1px solid #e0e0e0;
     margin: 1em;
-    border-radius: 12px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 1px 3px #0000000d, 0 4px 6px #0000001a;
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    section,
+    footer {
+        padding: 1rem;
+    }
+}
+
+.playlist-info {
+    padding-left: 1rem;
 }
 
 .modal {
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+    background-color: #29121266;
 }
 
 .modal.hidden {
@@ -39,12 +60,12 @@ body {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
+    box-shadow: 0 1px 3px #0000000d, 0 4px 6px #0000001a;
+    border-radius: 10px;
     width: 80%;
-    /* Could be more or less, depending on screen size */
 
     header {
         display: flex;
@@ -65,20 +86,42 @@ body {
     cursor: pointer;
 }
 
+.playlist-songs {
+    margin-top: 2.5rem;
+    max-height: 300px;
+    overflow: scroll;
+}
+
 .playlist-song {
     display: flex;
-    justify-content: space-between;
-    height: 100px;
-    border: 1px solid black;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .song-info {
+        flex: 0 0 auto;
+        padding-left: 1rem;
+    }
+
+    .song-duration {
+        margin-left: auto;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
 
 .playlist-thumbnail {
-    max-width: 300px;
+    max-width: 120px;
     overflow: hidden;
 }
 
 .song-thumbnail {
-    max-width: 100px;
+    max-width: 60px;
     overflow: hidden;
 }
 
@@ -88,4 +131,25 @@ body {
 
 .liked .heart {
     color: red;
+}
+
+.shuffle-btn {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    width: 120px;
+    background-color: #1e70ff;
+    color: #ffffff;
+    padding: 0.75em 1.25em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 1.5rem;
+}
+
+.shuffle-btn:hover {
+    background-color: #1a5edc;
 }

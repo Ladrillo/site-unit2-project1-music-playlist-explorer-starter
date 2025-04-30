@@ -38,7 +38,7 @@
       playlistCards.appendChild(pClone);
   
       title.textContent = p.playlistTitle;
-      creator.textContent = p.playlistCreator;
+      creator.textContent = `Created by ${p.playlistCreator}`;
       likeCount.textContent = p.playlistLikeCount;
   
       playlistCard.addEventListener("click", (evt) => {
@@ -65,7 +65,7 @@
         sClone.querySelector("h5").textContent = s.songTitle;
         sClone.querySelector("h5~p").textContent = s.songArtist;
         sClone.querySelector("h5~p~p").textContent = s.songAlbum;
-        sClone.querySelector(".duration").textContent = s.songDuration;
+        sClone.querySelector(".song-duration").textContent = s.songDuration;
         playlistSongs.appendChild(sClone);
       });
     }
